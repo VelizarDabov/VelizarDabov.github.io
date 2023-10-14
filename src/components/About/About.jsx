@@ -4,9 +4,9 @@ import cooding from '../../assets/cooding.jpg'
 function About() {
   return (
 <>
-<div>
+
 <div className='mockup-phone min-h-screen-50vh min-w-screen-50vh mt-5'>
-  <div className='text-center '>
+  <div className='text-center'>
     <h1>My Skills</h1>
   </div>
 <div className="progress-container">
@@ -34,7 +34,7 @@ function About() {
 
  
 </div>
-</div>
+
 
 <div className='flex space-x-4'>
   <div className="mockup-phone block items-right justify-right min-h-screen-80vh bgg-about bgg-cover bgg-center bgg-no-repeat">
@@ -81,22 +81,7 @@ function About() {
 }
 
 export default About
-{/* <div className='max-w-md p-4 space-x-4 bg-neutral rounded-box'>
-   <div className = 'carousel-item'>
-   <img src = {cooding} className="rounded-box" />
-   </div>
-   <div className="carousel rounded-box w-96">
-  <div className="carousel-item w-1/2">
-    <img src={cooding} className="w-full" />
-  </div> 
-  <div className="carousel-item w-1/2">
-    <img src={cooding} className="w-full" />
-  </div> 
 
-
-</div>
-    </div> */}
-    {/* </div> */}
     
 
 

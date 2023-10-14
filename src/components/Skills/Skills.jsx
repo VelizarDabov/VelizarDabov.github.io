@@ -1,41 +1,62 @@
-import React from "react";
-import javascriptPic from '../../assets/javascript.png';
-import reactPic from '../../assets/react.png'
-import htmlcssPic from '../../assets/htmlcss.png'
+import React, {useState} from "react";
+import jsBasics from '../../assets/jsbasics.png';
+import jsFundamentals from '../../assets/jsFundamentals.png';
+import jsAdvanced from '../../assets/jsAdvanced.png';
+import jsApplication from '../../assets/jsApplication.png';
+import reactjs from '../../assets/reactUdemy.png';
+import udemyJs from '../../assets/udemy1.png'
 const Skills = () => {
-return (
-<div className="flex flex-col w-full lg:flex-row">
-  <div className="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center">content</div> 
-  <div className="divider lg:divider-horizontal">OR</div> 
-  <div className="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center">content</div>
-</div>
+    const [expandedImg, setExpandedImg] = useState(null);
+    const [showContent, setShowContent] = useState(false); 
 
-  
-)
-}
+
+    const certificateImages = [
+        { src: jsBasics, alt: 'JS Basics' },
+        { src: jsFundamentals, alt: 'JS Fundamentals' },
+        { src: jsAdvanced, alt: 'JS Advanced' },
+        { src: jsApplication, alt: 'JS Application' },
+        { src: reactjs, alt: 'React Udemy' },
+        { src: udemyJs, alt: 'JS Udemy' },
+      ];
+
+      const handleImageClick = (index) => {
+        setExpandedImg(index === expandedImg ? null : index);
+      };
+
+        const toggleContent = () => {
+          setShowContent(!showContent);
+        };
+      
+        return (
+          <>
+            <div className="alert flex justify-center alert-success mt-20 bg-transparent border-purple-500 border-solid border-2">
+              <button className="btn" onClick={toggleContent}>
+                {showContent ? 'Hide My certificates' : 'Show My certificates'}
+              </button>
+            </div>
+            {showContent && (
+              <div className="container mx-auto mt-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {certificateImages.map((img, index) => (
+                    <div className="col-span-1" key={index}>
+                      <div className="card w-96 bg-transparent shadow-xl">
+                        <figure className="px-10 pt-10 relative">
+                          <img
+                            src={img.src}
+                            alt={img.alt}
+                            className={`certificateImg ${expandedImg === index ? 'expanded' : ''}`}
+                            onClick={() => handleImageClick(index)}
+                          />
+                        </figure>
+                        <div className="card-body items-center text-center">
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </>
+        );
+      };
 export default Skills;
-
-{/* <section id='skills'>
-<p className="">What i do</p>
-
-<div className="">
-    <div className="">
-        <img src={javascriptPic} alt="JavaScript" className="" />
-        <div className="">
-            <h2>JavaScript</h2>
-        </div>
-    </div>
-    <div className="">
-        <img src={reactPic} alt="ReactJS" className="" />
-        <div className="">
-            <h2>ReactJS</h2>
-        </div>
-    </div>
-    <div className="">
-        <img src={htmlcssPic} alt="htmlcss" className="" />
-        <div className="">
-            <h2>HTML and CSS</h2>
-        </div>
-    </div>
-</div>
-    </section> */}

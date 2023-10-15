@@ -3,8 +3,6 @@
 @tailwind utilities;
 
 .btn {
-  justify-content: center;
-  align-items: center;
   background: linear-gradient(
     92.23deg,
     #ff56f6 21.43%,

@@ -1,6 +1,7 @@
 import React from 'react'
 import profilePic from '../../assets/profilePic.jpg'
-import cooding from '../../assets/cooding.jpg'
+import myResume from '../../assets/Velizars-Resume.pdf';
+
 function About() {
   return (
 <>
@@ -67,7 +68,10 @@ function About() {
   
     </div>
     <div className='px-14 mt-14'>
-    <button className='btn '>Download Resume</button>
+      <a href={myResume} download='Velizars-Resume.pdf'>
+      <button className='btn text-white'>Download Resume</button>
+      </a>
+      
     </div>
    
   </div>

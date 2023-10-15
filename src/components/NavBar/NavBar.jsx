@@ -1,14 +1,9 @@
-import React, {useState} from "react";
+import React from "react";
 import { Link, animateScroll as scroll } from 'react-scroll';
 import logo from '../../assets/logo.png'
 import contactImg from '../../assets/contact.png'
-import ContactForm from "../ContactForm/ContactForm";
-const NavBar = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
-  };
+const NavBar = ({scrollToContact, toggleContactForm   }) => {
     return (
       <div className="navbar bg-base-100">
         <div className="navbar-start">
@@ -59,19 +54,13 @@ const NavBar = () => {
           <a className="btn btn-ghost normal-case text-xl">Velizar Dabov</a>
         </div>
         <div className="navbar-end">
-        <button
-          className="btn btn-ghost btn-circle"
-          onClick={toggleModal} // Call the function to toggle the modal
-        >
-          Contact me
-        </button>
-        <input type="checkbox" id="my_modal_7" className="modal-toggle" checked={isModalOpen} />
-        <div className={`modal ${isModalOpen ? 'open' : ''}`}>
-          <div className="modal-box bg-transparent">
-          <ContactForm/>
-          </div>
-          <label className="modal-backdrop" htmlFor="my_modal_7" onClick={toggleModal}></label>
-        </div>
+        <button className="btn btn-ghost btn-circle" onClick={() => {
+        scrollToContact();
+        toggleContactForm();
+      }}>
+        Contact me
+      </button>
+   
       </div>
     </div>
     );

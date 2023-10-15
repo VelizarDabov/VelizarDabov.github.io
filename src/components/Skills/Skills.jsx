@@ -30,7 +30,7 @@ const Skills = () => {
         return (
           <>
             <div className="alert flex justify-center alert-success mt-20 bg-transparent border-purple-500 border-solid border-2">
-              <button className="btn" onClick={toggleContent}>
+              <button className="btn text-white" onClick={toggleContent}>
                 {showContent ? 'Hide My certificates' : 'Show My certificates'}
               </button>
             </div>

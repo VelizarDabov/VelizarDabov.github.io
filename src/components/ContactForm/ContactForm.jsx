@@ -37,7 +37,7 @@ return(<div id= 'contact' className='flex space-x-4'>
 <div className="display ">
   <div className="artboard  items-right justify-rightart board-demo phone-1  bg-about bg-cover bg-center bg-no-repeat artbord-ml-10 text-white">
   <div className="bg-transparent p-12 rounded-lg shadow-lg">
-  <h2 className="text-4xl font-semibold mb-6 text-purple-500 ">Contact Me</h2>
+  <h2 className="text-4xl font-semibold mb-2 text-purple-500 ">Contact Me</h2>
   <form ref={form} onSubmit={sendEmail} className="space-y-6">
     <div className="flex flex-col">
       <label htmlFor="name" className="text-white">Your Name</label>

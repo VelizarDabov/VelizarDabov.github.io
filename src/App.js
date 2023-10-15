@@ -5,7 +5,6 @@ import Skills from './components/Skills/Skills';
 import Works from './components/Works/Works';
 import Contact from './components/Contact/Contact';
 import video from './assets/bgggg.mp4'
-import Footer from './components/Footer/Footer';
 const App = () => {
   const [showContactForm, setShowContactForm] = useState(false);
 
@@ -23,7 +22,7 @@ const App = () => {
     setShowContactForm(true);
   };
   return (
-    <div className="relative object-cover h-[200vh]">
+    <div className="relative object-cover h-[160vh]">
       <video className="object-cover w-full h-full z-10" src={video} autoPlay loop muted></video>
       <div className="absolute inset-0 z-20"> 
       <NavBar scrollToContact={scrollToContact} toggleContactForm={openContactForm} />
@@ -31,7 +30,6 @@ const App = () => {
         <Skills />
         <Works />
         <Contact showContactForm={showContactForm} toggleContactForm={toggleContactForm} />
-        <Footer/>
       </div>
     </div>
   );

@@ -2,59 +2,55 @@ import React from "react";
 import { Link, animateScroll as scroll } from 'react-scroll';
 import logo from '../../assets/logo.png'
 import contactImg from '../../assets/contact.png'
-
+import {SiGithub, SiLinkedin, SiFacebook} from 'react-icons/si'
 const NavBar = ({scrollToContact, toggleContactForm   }) => {
     return (
-      <div className="navbar bg-base-100">
-        <div className="navbar-start">
-          <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost btn-circle">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" />
-              </svg>
-            </label>
-            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li>
-                <Link
-                  to="about"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                >
-                  Homepage
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="works"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                >
-                 Works
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="skills"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                >
-                  Skills
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="navbar-center">
-          <a className="btn btn-ghost normal-case text-xl">Velizar Dabov</a>
-        </div>
-        <div className="navbar-end">
-        <button className="btn btn-ghost btn-circle" onClick={() => {
+      <div className="navbar bg-transparent p-5 ">
+        <div className="navbar-start min-w-auto">
+
+        
+        <div className="stats shadow bg-transparent">
+  
+  <div className="stat pl-0 pr-0">
+    <div className="stat-figure text-primary">
+    
+    </div>
+    <div className="stat-title text-center text-2xl text-purple-500">Github</div>
+        <div className='ml-4'>
+    <a href='https://github.com/VelizarDabov'>
+<SiGithub className="text-5xl  text-white"/>
+   </a>
+    </div>
+ 
+  
+  </div>
+  
+  <div className="stat pl-0 pr-0">
+    <div className="stat-figure text-secondary">
+     
+    </div>
+    <div className="stat-title  text-center text-2xl text-purple-500">Linkedin</div>
+  <div className='ml-4'>
+  <a href='https://www.linkedin.com/in/velizar-dabov-28729b24b/'>
+  <SiLinkedin className="text-5xl text-white"/>
+</a>
+  </div>
+  
+
+</div>
+  
+  <div className="stat pl-0 pr-0">
+  <div className="stat-title text-center text-2xl text-purple-500">Facebook</div>
+ <div className='ml-4'>
+ <a href='https://www.facebook.com/velizar.dabov'>
+   <SiFacebook className="text-5xl  text-white"/>
+ </a>
+ </div>
+</div>
+</div>
+   </div>
+        <div className="navbar-end ">
+        <button className="btn btn-ghost btn-circle text-2xl mr-10" onClick={() => {
         scrollToContact();
         toggleContactForm();
       }}>

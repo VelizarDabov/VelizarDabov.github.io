@@ -80,7 +80,7 @@ return(<div id= 'contact' className='flex space-x-4'>
 <div className='px-14 '>
 <button
       type="submit"
-      className="btn min-w-full text-white "
+      className="btn min-w-full text-white mt-20 "
     >
       Send
     </button>

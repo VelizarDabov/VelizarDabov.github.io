@@ -60,31 +60,31 @@ function About() {
     <div className="chat chat-end ">
   <div className="chat-image avatar online">
     <div className="w-10 rounded-full">
-      <img src={profilePic} className='w-24 rounded-full'/>
+      <img src={profilePic} alt='img' className='w-24 rounded-full'/>
     </div>
   </div>
-  <div className="chat-bubble bg-grey bg-opacity-50 chatrelative w-fit p-4 max-w-90 mt-12 ">Hello,</div>
+  <div className="chat-bubble bg-grey bg-opacity-50 chatrelative w-fit p-4 max-w-90 mt-20 text-white ">Hello,</div>
 </div>
 <div className="chat chat-end">
   <div className="chat-image  avatar online">
     <div className="w-10 rounded-full">
-      <img src={profilePic} />
+      <img src={profilePic} alt='img' />
     </div>
   </div>
-  <div className="chat-bubble bg-grey bg-opacity-30 ">I'm <div>Velizar </div>Junior Front-End Developer</div>
+  <div className="chat-bubble bg-grey bg-opacity-30 text-white ">I'm <div className='text-purple-400'>Velizar Dabov </div>Junior Front-End Developer</div>
 </div>
 <div className="chat chat-end">
   <div className="chat-image avatar online">
     <div className="w-10 rounded-full">
-      <img src={profilePic} />
+      <img src={profilePic} alt='img'/>
     </div>
   </div>
-  <div className="chat-bubble bg-grey bg-opacity-30">A motivated junior front-end developer with a passion for creating seamless and visually appealing web experiences.</div>
+  <div className="chat-bubble bg-grey bg-opacity-30 text-white">A motivated junior front-end developer with a passion for creating seamless and visually appealing web experiences.</div>
   
     </div>
     <div className='px-14 mt-14'>
       <a href={myResume} download='Velizars-Resume.pdf'>
-      <button className='btn text-white'>Download Resume</button>
+      <button className='btn text-white ml-5 mt-10'>Download Resume</button>
       </a>
       
     </div>

@@ -1,11 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import {SiGithub, SiLinkedin, SiFacebook} from 'react-icons/si';
 const NavBar = ({scrollToContact, toggleContactForm   }) => {
   const clickEvents = () => {
-    console.log("Scrolling to Contact");
     scrollToContact();
-    console.log("Opening Contact Form");
-    toggleContactForm();
+    setTimeout(() => {
+      toggleContactForm();
+    }, 100);
   }
     return (
       <div className="navbar bg-transparent p-5 ">
@@ -53,7 +53,7 @@ const NavBar = ({scrollToContact, toggleContactForm   }) => {
 </div>
    </div>
         <div className="navbar-end ">
-        <button className="btn btn-ghost btn-circle text-2xl mr-20 " onClick={clickEvents}>
+        <button className="btn btn-ghost text-white btn-circle text-2xl mr-20 " onClick={clickEvents}>
         Contact me
       </button>
    

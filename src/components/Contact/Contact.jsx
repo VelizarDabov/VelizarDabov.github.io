@@ -8,9 +8,10 @@ const Contact = ({ showContactForm, toggleContactForm }) => {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
   useEffect(() => {
     if (showContactForm) {
-      scrollToContact();
+      scrollToContact(); 
     }
   }, [showContactForm]);
 

@@ -1,7 +1,4 @@
 import React from "react";
-import { Link, animateScroll as scroll } from 'react-scroll';
-import logo from '../../assets/logo.png'
-import contactImg from '../../assets/contact.png'
 import {SiGithub, SiLinkedin, SiFacebook} from 'react-icons/si'
 const NavBar = ({scrollToContact, toggleContactForm   }) => {
     return (

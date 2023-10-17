@@ -43,7 +43,7 @@
 
 
 .flip-scale{-webkit-animation:flip-scale-2-hor-top .5s linear both;animation:flip-scale-2-hor-top .5s linear both}
-@layer base {
+/* @layer base {
   body {
     @apply font-secondary text-lg leading-8 text-white;
   }
@@ -71,4 +71,4 @@
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
-}
+} */

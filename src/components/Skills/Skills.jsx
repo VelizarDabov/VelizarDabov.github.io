@@ -40,7 +40,7 @@ const Skills = () => {
                   {certificateImages.map((img, index) => (
                     <div className="col-span-1" key={index}>
                       <div className="card w-80 bg-transparent shadow-xl flex flex-col justify-center items-center">
-                        <figure className=" justify-center align-center px-8 pt-5 mr-12 relative">
+                        <figure className=" justify-center align-center px-8   mr-20 relative">
                           <img
                             src={img.src}
                             alt={img.alt}

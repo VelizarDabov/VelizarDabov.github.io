@@ -22,7 +22,7 @@ const App = () => {
     setShowContactForm(true);
   };
   return (
-    <div className="relative object-cover h-[vh]">
+    <div className="relative object-cover h-[280vh]">
       <video className="object-cover w-full h-full z-10" src={video} autoPlay loop muted></video>
       <div className="absolute inset-0 z-20"> 
       <NavBar scrollToContact={scrollToContact} toggleContactForm={openContactForm} />

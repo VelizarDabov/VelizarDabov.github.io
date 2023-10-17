@@ -27,7 +27,7 @@ const Works = () => {
                 <img
                   src={work.image}
                   alt={work.title}
-                  className="w-full h-32 object-contain rounded-t-md ml-"
+                  className="w-full h-32 object-contain rounded-t-md "
                 />
                 <div className="p-6">
                   <h2 className="text-2xl font-bold text-purple-800 tracking-wider">

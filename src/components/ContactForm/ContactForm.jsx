@@ -32,7 +32,7 @@ const sendEmail = (e) => {
         message: '',})
   };
 return(<div id= 'contact' className='flex space-x-4'>
-<div className="mockup-phone block items-right justify-right min-h-screen-80vh bgg-about bgg-cover bgg-center bgg-no-repeat mt-20 ">
+<div className="mockup-phone block items-right justify-right min-h-screen-80vh bgg-about bgg-cover bgg-center bgg-no-repeat mt-10 ">
 <div className="camera"></div> 
 <div className="display ">
   <div className="artboard  items-right justify-rightart board-demo phone-1  bg-about bg-cover bg-center bg-no-repeat artbord-ml-10 text-white">

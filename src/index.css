@@ -40,23 +40,8 @@
   padding: 1rem;
   border-radius: 100%;
 }
-.content-div {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 450px;
-  width:400px;
-  display: -ms-grid;
-}
 
-.content-div:hover {
-  background-image: linear-gradient(
-      to right,
-      transparent
-      /* rgba(183, 112, 255, 0.8),
-      hsla(289, 79%, 54%, 0.5)    */
-  )!important;
-}
+
 .flip-scale{-webkit-animation:flip-scale-2-hor-top .5s linear both;animation:flip-scale-2-hor-top .5s linear both}
 @layer base {
   body {

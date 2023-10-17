@@ -7,13 +7,13 @@ import weatherApp from '../../assets/weatherApp.png';
 const worksData = [
     {
       title: 'React Weather App',
-      description: 'Simple weather app using ReactJS and Firebase',
+      description: 'Weather app using ReactJS and Firebase',
       image: weatherApp,
       githubLink: 'https://github.com/VelizarDabov/React-Weather-App',
     },
     {
       title: 'Todo App',
-      description: 'Simple Todo App using ReactJS',
+      description: 'Simple Todo App using ReactJS and Firebase',
       image: todoApp,
       githubLink: 'https://github.com/VelizarDabov/React-Weather-App',
     },

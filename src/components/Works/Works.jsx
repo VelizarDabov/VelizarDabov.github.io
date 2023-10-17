@@ -11,7 +11,7 @@ const Works = () => {
 
   return (
     <>
-      <div className="alert flex justify-center alert-success mt-20 bg-transparent border-purple-500 border-solid border-2 ">
+      <div className="alert flex justify-center alert-success mt-10 bg-transparent border-purple-500 border-solid border-2 ">
         <button className="btn text-white" onClick={()=>document.getElementById('my_modal_4').showModal()}>
   Show my works
         </button>
@@ -22,7 +22,7 @@ const Works = () => {
             {worksData.map((work, index) => (
               <div
                 key={index}
-                className="content-div text-center"
+                className="text-center justify-center align-center"
               >
                 <img
                   src={work.image}
@@ -33,7 +33,7 @@ const Works = () => {
                   <h2 className="text-2xl font-bold text-purple-800 tracking-wider">
                     {work.title}
                   </h2>
-                  <p className="text-white mr-10">{work.description}</p>
+                  <p className="text-white">{work.description}</p>
                   <div className="pt-6 text-center">
                     <a href={work.githubLink} target="_blank" rel="noreferrer">
                       <button className="btn w-36 text-white">GitHub</button>

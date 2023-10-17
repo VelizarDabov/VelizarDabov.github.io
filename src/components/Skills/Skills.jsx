@@ -7,7 +7,7 @@ import reactjs from '../../assets/reactUdemy.png';
 import udemyJs from '../../assets/udemy1.png'
 const Skills = () => {
     const [expandedImg, setExpandedImg] = useState(null);
-    const [showContent, setShowContent] = useState(false); 
+    // const [showContent, setShowContent] = useState(false); 
 
 
     const certificateImages = [

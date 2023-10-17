@@ -1,4 +1,4 @@
-import React, {} from 'react';
+import React from 'react';
 import ContactForm from '../ContactForm/ContactForm';
 
 const Contact = ({ showContactForm, toggleContactForm }) => {

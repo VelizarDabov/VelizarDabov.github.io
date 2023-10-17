@@ -17,7 +17,7 @@ const form = useRef();
 const sendEmail = (e) => {
     e.preventDefault();
     console.log(formData);
-    emailjs.sendForm('service_iqjeit6', 'template_7uajuns', form.current, 'ie9ugSM03hYpDkCyS')
+    emailjs.sendForm('*********', '***********', form.current, '*****************')
       .then((result) => {
           console.log(result.text);  
           e.target.reset();  
@@ -82,7 +82,7 @@ return(<div id= 'contact' className='flex space-x-4'>
       type="submit"
       className="btn min-w-full text-white "
     >
-      Submit
+      Send
     </button>
 </div>
 

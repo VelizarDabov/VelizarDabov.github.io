@@ -1,9 +1,4 @@
-import React, {useState, useRef} from 'react';
-
-import FacebookImg from '../../assets/facebook-icon.png';
-import LinkedInImg from '../../assets/linkedIn.png';
-import githubImg from '../../assets/github.png';
-import NavBar from '../NavBar/NavBar';
+import React, {} from 'react';
 import ContactForm from '../ContactForm/ContactForm';
 
 const Contact = ({ showContactForm, toggleContactForm }) => {

@@ -17,24 +17,29 @@ const Works = () => {
  
 </div>
 {showContent && (
-        <div className="container mx-auto mt-10 mr-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="w-full md:h-screen text-gray-300 bg-[#0a192f] mt-20">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {worksData.map((work, index) => (
-              <div key={index} className="col-span-1">
-                <div className="card w-96 bg-transparent shadow-xl">
-                  <figure className="px-10 pt-10 relative">
-                    <img src={work.image} alt={work.title} className="rounded-xl" />
-                  </figure>
-                  <div className="card-body items-center text-center">
-                    <h2 className="card-title">{work.title}</h2>
-                    <p>{work.description}</p>
-                    <div className="card-actions">
-                      <a href={work.githubLink}>
-                        <button className="btn btn-primary">GitHub</button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+             <div
+             key={index}
+             style={{ backgroundImage: `url(${work.image})` }}
+             className="shadow-lg  shadow-[#040c16] group container rounded-md 
+                       flex justify-center text-center items-center mx-auto content-div "
+           >
+             <div className="opacity-0 group-hover:opacity-100 ">
+      <span className="text-2xl font bold text-white tracking-wider ">
+        {work.name}
+      </span>
+      <div className="pt-8 text-center ">
+       
+        <a href={work.githubLink} target="_blank">
+          <button className="btn w-60 text-white"
+          >
+           github
+          </button>
+        </a>
+      </div>
+    </div>
               </div>
             ))}
           </div>

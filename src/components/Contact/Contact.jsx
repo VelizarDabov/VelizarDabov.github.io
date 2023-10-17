@@ -17,7 +17,7 @@ const Contact = ({ showContactForm, toggleContactForm }) => {
 
   return (
     <>
-      <div className="alert flex justify-center alert-success mt-10 bg-transparent border-purple-500 border-solid border-2">
+      <div id='contactt' className="alert flex justify-center alert-success mt-10 bg-transparent border-purple-500 border-solid border-2">
         <button className="btn text-white" onClick={() => {
           toggleContactForm();
         }}>

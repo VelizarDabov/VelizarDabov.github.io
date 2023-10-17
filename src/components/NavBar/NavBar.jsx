@@ -20,7 +20,7 @@ const NavBar = ({scrollToContact, toggleContactForm   }) => {
     </div>
     <div className="stat-title text-center text-2xl text-purple-500">Github</div>
         <div className='ml-4'>
-    <a href='https://github.com/VelizarDabov'>
+    <a href='https://github.com/VelizarDabov' alt='link'>
 <SiGithub className="text-5xl  text-white"/>
    </a>
     </div>
@@ -34,7 +34,7 @@ const NavBar = ({scrollToContact, toggleContactForm   }) => {
     </div>
     <div className="stat-title  text-center text-2xl text-purple-500">Linkedin</div>
   <div className='ml-4'>
-  <a href='https://www.linkedin.com/in/velizar-dabov-28729b24b/'>
+  <a href='https://www.linkedin.com/in/velizar-dabov-28729b24b/' alt='link'>
   <SiLinkedin className="text-5xl text-white"/>
 </a>
   </div>
@@ -45,7 +45,7 @@ const NavBar = ({scrollToContact, toggleContactForm   }) => {
   <div className="stat pl-0 pr-0">
   <div className="stat-title text-center text-2xl text-purple-500">Facebook</div>
  <div className='ml-4'>
- <a href='https://www.facebook.com/velizar.dabov'>
+ <a href='https://www.facebook.com/velizar.dabov' alt='link'>
    <SiFacebook className="text-5xl  text-white"/>
  </a>
  </div>

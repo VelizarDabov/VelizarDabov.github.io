@@ -12,7 +12,7 @@ const Contact = ({ showContactForm, toggleContactForm }) => {
       <button className="btn text-white" onClick={() => {
         toggleContactForm();
       }}>
-        {showContactForm ? 'Send me an Email' : 'Contact me'}
+        {showContactForm ? 'Close' : 'Contact me'}
       </button>
       {showContactForm && <ContactForm />}
     </div>

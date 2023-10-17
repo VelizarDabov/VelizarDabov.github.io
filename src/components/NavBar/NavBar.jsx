@@ -50,7 +50,7 @@ const NavBar = ({scrollToContact, toggleContactForm   }) => {
 </div>
    </div>
         <div className="navbar-end ">
-        <button className="btn btn-ghost btn-circle text-2xl mr-10" onClick={() => {
+        <button className="btn btn-ghost btn-circle text-2xl mr-10 " onClick={() => {
         scrollToContact();
         toggleContactForm();
       }}>

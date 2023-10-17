@@ -11,6 +11,7 @@
     #406aff 117.04%
   );
   box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  
 }
 
 .btn:hover {
@@ -56,6 +57,7 @@
       hsla(289, 79%, 54%, 0.5)    */
   )!important;
 }
+.flip-scale{-webkit-animation:flip-scale-2-hor-top .5s linear both;animation:flip-scale-2-hor-top .5s linear both}
 @layer base {
   body {
     @apply font-secondary text-lg leading-8 text-white;

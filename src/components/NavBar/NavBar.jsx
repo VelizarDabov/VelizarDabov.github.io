@@ -10,8 +10,6 @@ const NavBar = ({scrollToContact, toggleContactForm   }) => {
     return (
       <div className="navbar bg-transparent p-5 ">
         <div className="navbar-start min-w-auto">
-
-        
         <div className="stats shadow bg-transparent">
   
   <div className="stat pl-0 pr-0">
@@ -24,8 +22,6 @@ const NavBar = ({scrollToContact, toggleContactForm   }) => {
 <SiGithub className="text-5xl  text-white"/>
    </a>
     </div>
- 
-  
   </div>
   
   <div className="stat pl-0 pr-0">
@@ -38,8 +34,6 @@ const NavBar = ({scrollToContact, toggleContactForm   }) => {
   <SiLinkedin className="text-5xl text-white"/>
 </a>
   </div>
-  
-
 </div>
   
   <div className="stat pl-0 pr-0">

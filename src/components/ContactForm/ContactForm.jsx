@@ -2,8 +2,8 @@ import React, {useState,useRef} from "react";
 import emailjs from '@emailjs/browser';
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
+    your_name: '',
+    your_email: '',
     message: '',
   });
   const handleChange = (e) => {
@@ -14,18 +14,21 @@ const ContactForm = () => {
     });
   };
 const form = useRef();
-const sendEmail = (e) => {
+
+const sendEmail = async (e) => {
     e.preventDefault();
-    console.log(formData);
-    emailjs.sendForm('*********', '***********', form.current, '*****************')
+    try{
+
+    
+    emailjs.sendForm('service_czqgld9', 'template_7uajuns', form.current, '-Rr6-BRoi8lKgINdT')
       .then((result) => {
           console.log(result.text);  
           e.target.reset();  
           alert('Email sent')
-          
-      }, (error) => {
-          console.log(error.text);
-      });
+      }  
+      )}catch (error) {
+  console.log(error.text);       
+      };
       setFormData({
         name: '',
         email: '',
@@ -43,7 +46,7 @@ return(<div id= 'contact' className='flex space-x-4'>
       <label htmlFor="name" className="text-white">Your Name</label>
       <input
         type="text"
-        name="name"
+        name='your_name'
         value={formData.name}
         onChange={handleChange}
         className="p-1 border border-purple-300 rounded"
@@ -56,7 +59,7 @@ return(<div id= 'contact' className='flex space-x-4'>
       <label htmlFor="email" className=" text-white">Your Email</label>
       <input
       type="email"
-      name="email"
+      name='your_email'
       value={formData.email}
       onChange={handleChange}
       className="p-1 border border-purple-300 rounded"

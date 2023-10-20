@@ -22,6 +22,8 @@ const NavBar = ({scrollToContact, toggleContactForm   }) => {
 <SiGithub className="text-5xl  text-white"/>
    </a>
     </div>
+ 
+  
   </div>
   
   <div className="stat pl-0 pr-0">
@@ -34,6 +36,7 @@ const NavBar = ({scrollToContact, toggleContactForm   }) => {
   <SiLinkedin className="text-5xl text-white"/>
 </a>
   </div>
+
 </div>
   
   <div className="stat pl-0 pr-0">

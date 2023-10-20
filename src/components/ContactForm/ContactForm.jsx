@@ -17,23 +17,27 @@ const form = useRef();
 
 const sendEmail = async (e) => {
     e.preventDefault();
-    try{
-
+    try {
+      await emailjs.sendForm(
+        "service_czqgld9",
+        "template_7uajuns",
+        form.current,
+        "-Rr6-BRoi8lKgINdT"
+      );
+alert("Email sent successfully")
+      e.target.reset();
     
-    emailjs.sendForm('service_czqgld9', 'template_7uajuns', form.current, '-Rr6-BRoi8lKgINdT')
-      .then((result) => {
-          console.log(result.text);  
-          e.target.reset();  
-          alert('Email sent')
-      }  
-      )}catch (error) {
-  console.log(error.text);       
-      };
+
       setFormData({
-        name: '',
-        email: '',
-        message: '',})
+        your_name: "",
+        your_email: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error(error);
+    }
   };
+
 return(<div id= 'contact' className='flex space-x-4'>
 <div className="mockup-phone block items-right justify-right min-h-screen-80vh bgg-about bgg-cover bgg-center bgg-no-repeat mt-10 ">
 <div className="camera"></div> 
@@ -41,7 +45,7 @@ return(<div id= 'contact' className='flex space-x-4'>
   <div className="artboard  items-right justify-rightart board-demo phone-1  bg-about bg-cover bg-center bg-no-repeat artbord-ml-10 text-white">
   <div className="bg-transparent p-12 rounded-lg shadow-lg">
   <h2 className="text-4xl justify-center align-center font-semibold mb-2 text-purple-500 ">Contact Me</h2>
-  <form ref={form} onSubmit={sendEmail} className="space-y-6">
+  <form ref={form} onSubmit={sendEmail}  className="space-y-6">
     <div className="flex flex-col">
       <label htmlFor="name" className="text-white">Your Name</label>
       <input
@@ -49,7 +53,7 @@ return(<div id= 'contact' className='flex space-x-4'>
         name='your_name'
         value={formData.name}
         onChange={handleChange}
-        className="p-1 border border-purple-300 rounded"
+        className="p-1 border border-purple-300 rounded text-white"
         placeholder="John Doe"
         required
       />
@@ -62,7 +66,7 @@ return(<div id= 'contact' className='flex space-x-4'>
       name='your_email'
       value={formData.email}
       onChange={handleChange}
-      className="p-1 border border-purple-300 rounded"
+      className="p-1 border border-purple-300 rounded text-white"
       placeholder="john@example.com"
       required
       />
@@ -90,6 +94,7 @@ return(<div id= 'contact' className='flex space-x-4'>
 </div>
 
   </form>
+
   </div>
   </div>
 </div>

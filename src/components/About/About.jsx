@@ -24,27 +24,27 @@ function About() {
 
 <div >
 <div className='mockup-phone min-h-screen-50vh min-w-screen-50vh mt-5 ml-5'>
-  <div className='text-center'>
+  <div className='text-center text-white'>
     <h1>My Skills</h1>
   </div>
 <div className="progress-container">
 {skillsData.map((skill, index) => (
           <div key={index} className="progress-container">
-            <label className="progress-label mr-1.5">{skill.name}</label>
+            <label className="progress-label mr-1.5 text-white">{skill.name}</label>
             <progress className="progress progress-secondary w-56 " value={skill.percentage} max="100"></progress>
           </div>
         ))}
   </div>
 </div>
 <div className='mockup-phone min-h-screen-50vh min-w-screen-50vh mt-5 ml-5'>
-  <div className='text-center'>
+  <div className='text-center  text-white'>
     <h1>My Hobies</h1>
   </div>
 <div className="progress-container">
 <div className="progress-container">
         {hobbiesData.map((hobby, index) => (
           <div key={index} className="progress-container">
-            <label className="progress-label mr-1.5">{hobby.name}</label>
+            <label className="progress-label mr-1.5 text-white">{hobby.name}</label>
             <progress className="progress progress-secondary w-56" value={hobby.percentage} max="100"></progress>
           </div>
         ))}

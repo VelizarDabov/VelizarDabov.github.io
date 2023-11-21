@@ -20,16 +20,25 @@ const worksData = [
   },
     {
       title: 'React Weather App',
-      description: 'Simple weather app using ReactJS and Firebase',
+      description: 'Weather app using ReactJS and Firebase',
       image: weatherApp,
       githubLink: 'https://github.com/VelizarDabov/React-Weather-App',
     },
+<<<<<<< HEAD
     // {
     //   title: 'Todo App',
     //   description: 'Simple Todo App using ReactJS',
     //   image: todoApp,
     //   githubLink: 'https://github.com/VelizarDabov/React-Weather-App',
     // },
+=======
+    {
+      title: 'Todo App',
+      description: 'Simple Todo App using ReactJS and Firebase',
+      image: todoApp,
+      githubLink: 'https://github.com/VelizarDabov/React-Weather-App',
+    },
+>>>>>>> f85955c05e84359a5b0e7da278b98392bfed7eeb
     {
       title: 'Shoes!',
       description: "If a dog chews shoes whose shoes does he choose?",

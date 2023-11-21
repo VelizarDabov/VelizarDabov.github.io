@@ -22,18 +22,18 @@ const Works = () => {
             {worksData.map((work, index) => (
               <div
                 key={index}
-                className="content-div text-center"
+                className="text-center justify-center align-center"
               >
                 <img
                   src={work.image}
                   alt={work.title}
-                  className="w-full h-32 object-contain rounded-t-md ml-"
+                  className="w-full h-32 object-contain rounded-t-md "
                 />
                 <div className="p-6">
                   <h2 className="text-2xl font-bold text-purple-800 tracking-wider">
                     {work.title}
                   </h2>
-                  <p className="text-white mr-10">{work.description}</p>
+                  <p className="text-white">{work.description}</p>
                   <div className="pt-6 text-center">
                     <a href={work.githubLink} target="_blank" rel="noreferrer">
                       <button className="btn w-36 text-white">GitHub</button>

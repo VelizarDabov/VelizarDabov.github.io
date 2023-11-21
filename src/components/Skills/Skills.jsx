@@ -35,12 +35,12 @@ const Skills = () => {
             </div>
             <dialog id="my_modal_5" className="modal-overlay overflow-y-auto bg-black bg-opacity-90">
               
-              <div className="container mx-auto mt-10 ml-10">
+              <div className="mx-auto mt-10 ml-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
                   {certificateImages.map((img, index) => (
                     <div className="col-span-1" key={index}>
                       <div className="card w-80 bg-transparent shadow-xl flex flex-col justify-center items-center">
-                        <figure className="px-10 pt-10 relative">
+                        <figure className=" justify-center align-center px-8   mr-20 relative">
                           <img
                             src={img.src}
                             alt={img.alt}

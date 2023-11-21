@@ -11,7 +11,7 @@ const Works = () => {
 
   return (
     <>
-      <div className="alert flex justify-center alert-success mt-20 bg-transparent border-purple-500 border-solid border-2 ">
+      <div className="alert flex justify-center alert-success mt-10 bg-transparent border-purple-500 border-solid border-2 ">
         <button className="btn text-white" onClick={()=>document.getElementById('my_modal_4').showModal()}>
   Show my works
         </button>

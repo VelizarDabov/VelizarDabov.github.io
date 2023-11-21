@@ -3,20 +3,33 @@ import calculator from '../../assets/reactCalculato.png';
 import shoesApp from '../../assets/shoesApp.png';
 import todoApp from '../../assets/todoApp.png';
 import weatherApp from '../../assets/weatherApp.png';
-
+import trello from '../../assets/trello.png';
+import appointmentApp from '../../assets/appointmentApp.png';
 const worksData = [
+  {
+    title: 'Trello App',
+    description: 'Trello App using TypeScript and Appwrite database with all functionality available (drag and drop)',
+    image: trello,
+    githubLink: 'https://github.com/VelizarDabov/Trello-app',
+  },
+  {
+    title: 'Appointment App',
+    description: 'Appointment app using ReactJS and Firebase(in progress)',
+    image: appointmentApp,
+    githubLink: 'https://github.com/VelizarDabov/appointment-tailwind-app',
+  },
     {
       title: 'React Weather App',
       description: 'Simple weather app using ReactJS and Firebase',
       image: weatherApp,
       githubLink: 'https://github.com/VelizarDabov/React-Weather-App',
     },
-    {
-      title: 'Todo App',
-      description: 'Simple Todo App using ReactJS',
-      image: todoApp,
-      githubLink: 'https://github.com/VelizarDabov/React-Weather-App',
-    },
+    // {
+    //   title: 'Todo App',
+    //   description: 'Simple Todo App using ReactJS',
+    //   image: todoApp,
+    //   githubLink: 'https://github.com/VelizarDabov/React-Weather-App',
+    // },
     {
       title: 'Shoes!',
       description: "If a dog chews shoes whose shoes does he choose?",
